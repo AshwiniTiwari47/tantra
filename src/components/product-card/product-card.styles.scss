@@ -11,14 +11,43 @@
       height: 95%;
       object-fit: cover;
       margin-bottom: 5px;
+      position: relative;
     }
   
     button {
-      width: 80%;
+      width: 60%;
       opacity: 0.7;
       position: absolute;
       top: 255px;
       display: none;
+    }
+
+    .quantity {
+      display: flex;
+      position: absolute;
+      top: 255px;
+      color: aliceblue;
+      background-color: black;
+      opacity: 0.7;
+      
+      height: 10%;
+    
+      .arrow {
+        cursor: pointer;
+        font-size: larger;
+        font-weight: 500;
+        margin: 0 10px;
+        text-align: center;
+        padding:0 30px;
+        font-size: 25px;
+      }
+  
+      .value {
+        font-size: 25px;
+        margin: 0 10px;
+        font-weight: 500;
+        text-align: center;
+      }
     }
   
     &:hover {
@@ -30,6 +59,7 @@
         opacity: 0.85;
         display: flex;
       }
+
     }
   
     .footer {
